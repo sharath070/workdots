@@ -1,0 +1,58 @@
+#!/usr/bin/env bash
+
+PACKAGES=(
+  wget
+  ufw
+  openssh
+  openssl
+  ripgrep
+  fd-find
+  bat
+  less
+  xdg-user-dirs
+  gvfs-mtp
+  mate-polkit
+  libmtp
+  bluez
+  bluez-tools
+  zsh
+  curl
+  unzip
+  lsd
+  tealdeer
+  jq
+  fzf
+  cava
+  btop
+  pipewire
+  pipewire-alsa
+  pipewire-jack-audio-connection-kit
+  pipewire-pulseaudio
+  wireplumber
+  fastfetch
+  brightnessctl
+  playerctl
+  power-profiles-daemon
+  network-manager-applet
+  blueman
+  stow
+  pavucontrol
+  thunar
+  thunar-volman
+  thunar-archive-plugin
+  thunar-media-tags-plugin
+  wf-recorder
+  libnotify
+  ffmpeg
+  zoxide
+  man-db
+  google-noto-fonts-all
+  google-noto-emoji-fonts
+  google-noto-sans-cjk-fonts
+  google-noto-sans-hk-fonts
+  google-noto-sans-cjk-vf-fonts
+  google-noto-serif-cjk-fonts
+  google-noto-serif-cjk-vf-fonts
+)
+
+sudo dnf install -y "${PACKAGES[@]}"
