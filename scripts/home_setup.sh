@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # change shell
-# chsh -s $(which zsh)
+chsh -s $(which zsh)
 
 # enable bluetooth
 systemctl enable bluetooth.service
@@ -13,5 +13,7 @@ xdg-user-dirs-update
 cd $HOME/.dotfiles/dots/
 stow .
 
+mkdir -p ~/.local/share/fonts/
+cp ~/.dotfiles/.misc/fonts/* .local/share/fonts/
 
 curl -ffSL https://raw.githubusercontent.com/ajTronic/turbofetch/main/install.sh | sh

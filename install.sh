@@ -5,7 +5,11 @@ echo "max_parallel_downloads=10" | sudo tee -a /etc/dnf/dnf.conf
 echo "fastestmirror=True" | sudo tee -a /etc/dnf/dnf.conf
 echo "deltarpm=True" | sudo tee -a /etc/dnf/dnf.conf
 
+sudo dnf upgrade -y
+
 source ./scripts/base_pkgs.sh
+
+source ./scripts/third_party_repos.sh
 
 source ./scripts/wm.sh
 
